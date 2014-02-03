@@ -1,0 +1,1 @@
+E:\Projects\MDBComparer\MDBComparer\bin\Debug\MDBComparer.exe.config
