@@ -1,0 +1,12 @@
+E:\Projects\MDBComparer\MDBComparer\bin\Release\MDBComparer.exe.config
+E:\Projects\MDBComparer\MDBComparer\bin\Release\MDBComparer.exe
+E:\Projects\MDBComparer\MDBComparer\bin\Release\MDBComparer.pdb
+E:\Projects\MDBComparer\MDBComparer\obj\Release\MainWindow.baml
+E:\Projects\MDBComparer\MDBComparer\obj\Release\MainWindow.g.cs
+E:\Projects\MDBComparer\MDBComparer\obj\Release\App.g.cs
+E:\Projects\MDBComparer\MDBComparer\obj\Release\MDBComparer_MarkupCompile.cache
+E:\Projects\MDBComparer\MDBComparer\obj\Release\MDBComparer.g.resources
+E:\Projects\MDBComparer\MDBComparer\obj\Release\MDBComparer.Properties.Resources.resources
+E:\Projects\MDBComparer\MDBComparer\obj\Release\MDBComparer.csproj.GenerateResource.Cache
+E:\Projects\MDBComparer\MDBComparer\obj\Release\MDBComparer.exe
+E:\Projects\MDBComparer\MDBComparer\obj\Release\MDBComparer.pdb

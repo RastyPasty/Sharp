@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MDBComparer</name>
+    </assembly>
+    <members>
+        <member name="T:MDBComparer.App">
+            <summary>
+            Interaction logic for App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:MDBComparer.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:MDBComparer.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:MDBComparer.MainWindow">
+            <summary>
+            Interaction logic for MainWindow.xaml
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="M:MDBComparer.MainWindow.CloseButton_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Closes main window
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:MDBComparer.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:MDBComparer.MDB">
+            <summary>
+            Represents database info
+            </summary>
+        </member>
+        <member name="M:MDBComparer.MDB.Load">
+            <summary>
+            Loads MS Access file, don't forget initialize FilePath property
+            </summary>
+        </member>
+        <member name="T:MDBComparer.MDBTable">
+            <summary>
+            Represent MS Acces table info
+            </summary>
+        </member>
+        <member name="T:MDBComparer.ValueType">
+            <summary>
+            Contains MS Access data types
+            </summary>
+        </member>
+        <member name="T:MDBComparer.MDBTableColumn">
+            <summary>
+            Represents Access data column general information
+            </summary>
+        </member>
+        <member name="M:MDBComparer.MDBTableColumn.ToString">
+            <summary>
+            Converts column to its string representation
+            </summary>
+            <returns>Formatted column data</returns>
+        </member>
+        <member name="T:MDBComparer.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:MDBComparer.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:MDBComparer.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>
