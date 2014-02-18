@@ -50,6 +50,12 @@ namespace MDBComparer
             return column.ToString();
         }
 
+        /// <summary>
+        /// Compares two MDB columns
+        /// </summary>
+        /// <param name="a">MDBTableColumn instance</param>
+        /// <param name="b">MDBTableColumn instance</param>
+        /// <returns></returns>
         public static bool operator ==(MDBTableColumn a, MDBTableColumn b)
         {
             // If both are null, or both are same instance, return true.

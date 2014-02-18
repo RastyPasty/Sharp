@@ -11,4 +11,3 @@ E:\Projects\MDBComparer\MDBComparer\obj\Debug\MDBComparer.csproj.GenerateResourc
 E:\Projects\MDBComparer\MDBComparer\obj\Debug\MDBComparer.exe
 E:\Projects\MDBComparer\MDBComparer\obj\Debug\MDBComparer.pdb
 E:\Projects\MDBComparer\MDBComparer\bin\Debug\MDBComparer.XML
-E:\Projects\MDBComparer\MDBComparer\obj\Debug\MDBComparer.csprojResolveAssemblyReference.cache

@@ -37,6 +37,45 @@
             <param name="sender"></param>
             <param name="e"></param>
         </member>
+        <member name="M:MDBComparer.MainWindow.FilePath1_MouseDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Access Database file open dialog
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:MDBComparer.MainWindow.FilePath2_PreviewMouseDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Access Database file open dialog
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:MDBComparer.MainWindow.FileSelectingAndProcessing(System.Object)">
+            <summary>
+            Validate selected files and compare Access files
+            </summary>
+            <param name="sender">Element with Text property</param>
+        </member>
+        <member name="M:MDBComparer.MainWindow.SelectFile(System.Object)">
+            <summary>
+            Open file select dialog and fill Textbox
+            </summary>
+            <param name="sender">Element with Text property</param>
+        </member>
+        <member name="M:MDBComparer.MainWindow.FilesSelected">
+            <summary>
+            Checks if files exist
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MDBComparer.MainWindow.Compare(MDBComparer.MDB,MDBComparer.MDB)">
+            <summary>
+            Compare databases and view relult
+            </summary>
+            <param name="left">MDB instance</param>
+            <param name="right">MDB instance</param>
+        </member>
         <member name="M:MDBComparer.MainWindow.InitializeComponent">
             <summary>
             InitializeComponent
@@ -73,6 +112,15 @@
             </summary>
             <returns>Formatted column data</returns>
         </member>
+        <member name="M:MDBComparer.MDBTableColumn.op_Equality(MDBComparer.MDBTableColumn,MDBComparer.MDBTableColumn)">
+            <summary>
+            Compares two MDB columns
+            </summary>
+            <param name="a">MDBTableColumn instance</param>
+            <param name="b">MDBTableColumn instance</param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:MDBComparer.MyExtensions.FullOuterJoin``4(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``1},System.Func{``0,``2},System.Func{``1,``2},System.Func{``0,``1,``2,``3},``0,``1,System.Collections.Generic.IEqualityComparer{``2})" -->
         <member name="T:MDBComparer.Properties.Resources">
             <summary>
               A strongly-typed resource class, for looking up localized strings, etc.

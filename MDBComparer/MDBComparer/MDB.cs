@@ -118,8 +118,9 @@ namespace MDBComparer
                 }
                 DataLoaded = true;
             }
-            catch (Exception err)
+            catch (Exception)
             {
+                //print exception text on TextBox!
                 DataLoaded = false;
             }
         }

@@ -38,19 +38,31 @@ namespace MDBComparer
             this.Close();
         }
 
-
+        /// <summary>
+        /// Access Database file open dialog
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FilePath1_MouseDown(object sender, MouseButtonEventArgs e)
         {
             FileSelectingAndProcessing(sender);
         }
 
+        /// <summary>
+        /// Access Database file open dialog
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FilePath2_PreviewMouseDown(object sender, MouseButtonEventArgs e)
         {
             FileSelectingAndProcessing(sender);
         }
         #endregion
 
-
+        /// <summary>
+        /// Validate selected files and compare Access files
+        /// </summary>
+        /// <param name="sender">Element with Text property</param>
         private void FileSelectingAndProcessing(object sender)
         {
             SelectFile(sender);
@@ -66,6 +78,10 @@ namespace MDBComparer
             }
         }
 
+        /// <summary>
+        /// Open file select dialog and fill Textbox
+        /// </summary>
+        /// <param name="sender">Element with Text property</param>
         private void SelectFile(object sender)
         {
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
@@ -82,13 +98,24 @@ namespace MDBComparer
             }
         }
 
+        /// <summary>
+        /// Checks if files exist
+        /// </summary>
+        /// <returns></returns>
         private bool FilesSelected()
         {
             return File.Exists(FilePath_L.Text) && File.Exists(FilePath_R.Text);            
         }
 
+        /// <summary>
+        /// Compare databases and view relult
+        /// </summary>
+        /// <param name="left">MDB instance</param>
+        /// <param name="right">MDB instance</param>
         private void Compare(MDB left, MDB right)
         {
+            TextBlockOut.Text = String.Empty;
+            //fully joined left and right MDB collections
             var allTablesList = left.Tables.FullOuterJoin(right.Tables, l => l.Name, r => r.Name, (l, r, Name) => new { l, r });
 
             foreach (var tablePair in allTablesList.ToList())
@@ -100,6 +127,7 @@ namespace MDBComparer
                 List<MDBTableColumn> lefttable = tablePair.l.Rows;
                 List<MDBTableColumn> righttable = tablePair.r.Rows;
                 
+                //fully joined table collections
                 var allTableColumnsList = lefttable.FullOuterJoin(righttable, l => l.Name, r => r.Name, (l, r, Name) => new { l, r });
                 
                 foreach (var columnsPair in allTableColumnsList)
